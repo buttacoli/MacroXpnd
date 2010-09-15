@@ -24,5 +24,5 @@ syntax.lex.o: syntax.lex.c findFile.h
 main.o: main.c
 
 clean:
-	-rm syntax.lex.c findFile.o syntax
+	-rm syntax.lex.c $(OBJS) syntax
 
