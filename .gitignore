@@ -1,0 +1,9 @@
+## Ignore any bin executables, but track shell scripts
+test/
+
+## Do not track any .o, .a, or .so files
+*.o
+*.a
+*.so
+syntax
+syntax.lex.c
