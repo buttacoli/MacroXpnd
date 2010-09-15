@@ -1,0 +1,14 @@
+MacroXpnd started as a simple Flex/Bison experiment, its main purpose
+is to follow #include directives, but not Precompile into the cryptic
+format that gcc -E  alone generates.
+
+We could use gcc -P -E to rid the output of the line numbering, but 
+then we loose traceability of where the content has been #included from.
+That's what MacroXpnd will do, in its final form the content from the
+#include will be clearly marked (probably by gutters or indentation)
+showing where its content came from.  The program may also add functionality
+to actually track the #ifdef values, and thus show certain sections as
+excluded due to being in a #ifndef or #ifdef directive.
+
+M. Buttacoli
+9-14-2010
